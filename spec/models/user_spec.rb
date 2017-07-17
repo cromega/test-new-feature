@@ -6,4 +6,9 @@ describe User do
     user.save
     expect(user.id).to_not be_nil
   end
+
+  it "can have multiple addresses" do
+    user = User.new(username: "asd")
+    fail "test needs implementation"
+  end
 end
